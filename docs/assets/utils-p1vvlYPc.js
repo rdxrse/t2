@@ -1,1 +1,0 @@
-import{j as t}from"./index-6rf9y3DD.js";const a="_loader_tup88_1",n={loader:a},c=()=>t.jsx(t.Fragment,{children:t.jsx("div",{className:n.loader})}),o=r=>r.replace(/\d+/g,e=>` ${e} `),i=(r,e)=>o(r).split(e),d=(r,e)=>{if(r)return r.filter(s=>s.carNumber.replace(/\D/g,"").startsWith(e))};export{c as L,o as e,d as f,i as s};
