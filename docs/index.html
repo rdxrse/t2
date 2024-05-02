@@ -1,28 +1,34 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./wb.ico" />
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <meta content="true" name="HandheldFriendly"/>
-    <meta content="width" name="MobileOptimized"/>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <script>
-      (function(w,d,s,c,t,a,m){
-              w[t]=w[t]||function(){
-                  (w[t].q=w[t].q||[]).push(arguments)
-              },w[t].l=1*new Date();
-              a=d.createElement(s), m=d.getElementsByTagName(s)[0];
-              a.async=1;
-              a.src=c;
-              m.parentNode.insertBefore(a,m)}
-      )(window,document,'script','https://a.wb.ru/sdk/sdk.js','wba');
-    </script>
-    <title>Tablo</title>
-    <script type="module" crossorigin src="./entry/index-BnoSkprI.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Drg3Cxyt.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html style="box-sizing: border-box; margin: 0; padding: 0" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>Tablo</header>
+  <main>
+    <ul>
+    </ul>
+  </main>
+  <form>
+    <input/>
+  </form>
+</body>
+<script>
+  const ul = document.querySelector('ul')
+  for (let i = 0; i <= 100; i++) {
+    const li = document.createElement('li');
+    li.innerText = 'Номер: ' + i
+    ul.appendChild(li)
+  }
+
+
+  function resize() {
+    document.body.style.height = window.visualViewport.height - window.visualViewport.offsetTop + 'px'
+    console.log(window.visualViewport.offsetTop)
+  }
+  window.visualViewport.addEventListener('resize', resize)
+</script>
 </html>
