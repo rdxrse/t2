@@ -15,6 +15,7 @@
   <form>
     <input/>
   </form>
+  <div>hz</div>
 </body>
 <script>
   const ul = document.querySelector('ul')
@@ -28,6 +29,7 @@
   function resize() {
     document.body.style.height = window.visualViewport.height - window.visualViewport.offsetTop + 'px'
     console.log(window.visualViewport.offsetTop)
+    scroll({top: 0, left: 0})
   }
   window.visualViewport.addEventListener('resize', resize)
 </script>
