@@ -88,6 +88,8 @@
 
 
   </style>
+  <script data-polyfill=kindle>if(!Object.bind)document.write('<script src="js/kindle.js"><\x2fscript>');</script>
+  <script data-polyfill=ie11>try{new CustomEvent('💩')}catch(_){document.write('<script src="js/ie.js"><\x2fscript>')}</script>
   <script defer src="min.js"></script>
 </head>
 <body>
@@ -101,4 +103,12 @@
   </form>
   <footer></footer>
 </body>
+<script>
+  const ul = document.querySelector('ul')
+  for (let i = 0; i <= 100; i++) {
+    const li = document.createElement('li');
+    li.innerText = 'Номер: ' + i
+    ul.appendChild(li)
+  }
+</script>
 </html>
