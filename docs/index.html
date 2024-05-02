@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style="box-sizing: border-box; margin: 0; padding: 0" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>Tablo</header>
+  <main>
+    <ul>
+    </ul>
+  </main>
+  <form>
+    <input/>
+  </form>
+  <div>hz</div>
+</body>
+<script>
+
+
+
+  function resize() {
+    console.log('a')
+    document.body.style.height = window.visualViewport.height - window.visualViewport.offsetTop + 'px'
+    console.log(window.visualViewport.offsetTop)
+    scrollTo(0, 0)
+  }
+  window.visualViewport.addEventListener('resize', resize)
+</script>
+</html>
