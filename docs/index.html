@@ -9,8 +9,8 @@
 <body>
   <header>Tablo</header>
   <main>
-    <!-- <ul>
-    </ul> -->
+    <ul>
+    </ul>
   </main>
   <form>
     <input/>
@@ -18,14 +18,19 @@
   <div>hz</div>
 </body>
 <script>
-
+  const ul = document.querySelector('ul')
+  for (let i = 0; i <= 100; i++) {
+    const li = document.createElement('li');
+    li.innerText = 'Номер: ' + i
+    ul.appendChild(li)
+  }
 
 
   function resize() {
     console.log('a')
     document.body.style.height = window.visualViewport.height - window.visualViewport.offsetTop + 'px'
     console.log(window.visualViewport.offsetTop)
-    scrollTo(0, 0)
+    setTimeout(scrollTo, 300, 0, 0)
   }
   window.visualViewport.addEventListener('resize', resize)
 </script>
