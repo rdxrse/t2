@@ -29,11 +29,20 @@
   body, input {
     font-family: sans-serif;
   }
+  html {
+    background: #000;
+  }
   body {
+    border: 16px solid #252545;
+    border-radius: 16px;
+    background-color: #151515;
+    color: #eee;
     display: flex;
     flex-direction: column;
     text-align: center;
+
   }
+
   main {
     min-height: 50%;
     flex-grow: 1;
@@ -47,7 +56,7 @@
     max-width: calc(100% - 64px);
   }
   footer {
-
+    color: #eee;
     padding: 16px;
     font-size: small;
     border-top: 16px solid #252545;
@@ -70,8 +79,6 @@
   <main>
     <input>
   </main>
-  <footer>
-    <input type="text">
-  </footer>
+  <footer></footer>
 </body>
 </html>
