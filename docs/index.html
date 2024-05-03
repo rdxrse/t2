@@ -26,6 +26,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="manifest" href="manifest.json">
   <style>
+  body, input {
+    font-family: sans-serif;
+  }
   body {
     display: flex;
     flex-direction: column;
@@ -39,75 +42,36 @@
     align-items: center;
     justify-content: center;
   }
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  html, body {
-    /* height:100%;  */
-    height:100vh;
-    height:-moz-available;
-    height:-webkit-fill-available;
-    overflow:hidden;
-  }
-  body {
-    display: flex;
-    flex-flow: column;
-  }
-  header, form {
-    border: 1px solid black;
-    padding: 20px;
-    margin: 0 auto;
-    font-size: 20px;
-    width: 393px;
-    max-width: 393px;
-  }
   input {
-    width: 100%;
-    padding: 5px 10px;
+    font-size: 1rem;
+    max-width: calc(100% - 64px);
   }
-  main {
-    border: 1px solid black;
-    margin: 0 auto;
-    width: 393px;
-    min-height: 150px;
-    position: relative;
-    overflow: auto;
-  }
-  ul {
-    position: absolute;
-  }
-  li {
-    list-style: inside;
-    padding: 5px 10px;
-  }
+  footer {
 
-
-
+    padding: 16px;
+    font-size: small;
+    border-top: 16px solid #252545;
+  }
   </style>
-  <script data-polyfill=kindle>if(!Object.bind)document.write('<script src="js/kindle.js"><\x2fscript>');</script>
-  <script data-polyfill=ie11>try{new CustomEvent('💩')}catch(_){document.write('<script src="js/ie.js"><\x2fscript>')}</script>
-  <script defer src="es.js"></script>
+  <script defer src="min.js"></script>
+  <script>
+  addEventListener('screenfit', function (event) {
+    document.body.className = 'fit';
+    document.querySelector('footer').textContent = [
+      'current: ' + Math.round(event.detail.height),
+      'inner: ' + Math.round(innerHeight),
+      'avail: ' + Math.round(screen.availHeight)
+    ].join(' - ');
+    console.log(Math.random());
+  });
+  </script>
 </head>
 <body>
-  <header>Tablo</header>
   <main>
-    <ul>
-    </ul>
+    <input>
   </main>
-  <form>
-    <input/>
-  </form>
-  <footer></footer>
+  <footer>
+    <input type="text">
+  </footer>
 </body>
-<script>
-  const ul = document.querySelector('ul')
-  for (let i = 0; i <= 100; i++) {
-    const li = document.createElement('li');
-    li.innerText = 'Номер: ' + i
-    ul.appendChild(li)
-  }
-</script>
 </html>

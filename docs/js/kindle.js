@@ -1,1 +1,0 @@
-Function.prototype.bind=function(b){var a,c=this,d=[].slice.call(arguments,1);return function(){a=d.slice(0);a.push.apply(a,arguments);return c.apply(b,a)}};document.documentElement.className+=" kindle";
