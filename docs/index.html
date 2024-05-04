@@ -1,89 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>screenfit live demo</title>
-  <meta charset="UTF-8">
-  <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=0">
-  <meta name=author content="Andrea Giammarchi, @webreflection">
-  <meta name=description content="Screenfit - https://github.com/WebReflection/screenfit#readme">
-  <meta name=apple-mobile-web-app-capable content=yes>
-  <meta name=mobile-web-app-capable content=yes>
-  <meta name="msapplication-TileColor" content="#000000">
-  <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
-  <meta name="theme-color" content="#000000">
-  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="manifest" href="manifest.json">
-  <style>
-  body, input {
-    font-family: sans-serif;
-  }
-  html {
-    background: #000;
-  }
-  body {
-    border: 16px solid #252545;
-    border-radius: 16px;
-    background-color: #151515;
-    color: #eee;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    opacity: 0;
-    transition: opacity .3s ease-in;
-  }
-  body.fit {
-    opacity: 1;
-  }
-  main {
-    min-height: 50%;
-    flex-grow: 1;
-    display: block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  input {
-    font-size: 1rem;
-    max-width: calc(100% - 64px);
-  }
-  footer {
-    color: #eee;
-    padding: 16px;
-    font-size: small;
-    border-top: 16px solid #252545;
-  }
-  </style>
-  <script data-polyfill=kindle>if(!Object.bind)document.write('<script src="js/kindle.js"><\x2fscript>');</script>
-  <script data-polyfill=ie11>try{new CustomEvent('💩')}catch(_){document.write('<script src="js/ie.js"><\x2fscript>')}</script>
-  <script defer src="min.js"></script>
-  <script>
-  addEventListener('screenfit', function (event) {
-    document.body.className = 'fit';
-    document.querySelector('footer').textContent = [
-      'current: ' + Math.round(event.detail.height),
-      'inner: ' + Math.round(innerHeight),
-      'avail: ' + Math.round(screen.availHeight)
-    ].join(' - ');
-    console.log(Math.random());
-  });
-  </script>
-</head>
-<body>
-  <main>
-    <input>
-  </main>
-  <footer></footer>
-</body>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./wb.ico" />
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta content="true" name="HandheldFriendly"/>
+    <meta content="width" name="MobileOptimized"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script>
+      (function(w,d,s,c,t,a,m){
+              w[t]=w[t]||function(){
+                  (w[t].q=w[t].q||[]).push(arguments)
+              },w[t].l=1*new Date();
+              a=d.createElement(s), m=d.getElementsByTagName(s)[0];
+              a.async=1;
+              a.src=c;
+              m.parentNode.insertBefore(a,m)}
+      )(window,document,'script','https://a.wb.ru/sdk/sdk.js','wba');
+    </script>
+    <title>Tablo</title>
+    <script type="module" crossorigin src="./entry/index-CHEL0W-t.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Drg3Cxyt.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
