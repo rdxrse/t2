@@ -1,2 +1,0 @@
-import{j as d}from"../entry/index-DuNza_z2.js";(function(){try{var e=typeof window<"u"?window:typeof global<"u"?global:typeof self<"u"?self:{},r=new Error().stack;r&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[r]="8e602cf7-d220-4247-bff9-524376ab7ffa",e._sentryDebugIdIdentifier="sentry-dbid-8e602cf7-d220-4247-bff9-524376ab7ffa")}catch{}})();const t="_loader_tup88_1",n={loader:t},o=()=>d.jsx(d.Fragment,{children:d.jsx("div",{className:n.loader})});export{o as L};
-//# sourceMappingURL=loader-V9Cq-6P1.js.map
